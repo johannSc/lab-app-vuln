@@ -48,4 +48,34 @@ Il nous reste simplement à ajouter un utilisateur, un mot de passe associé (il
 
 Une fois l'interface graphique lancée, on entre donc notre utilisateur fraichement créé
 
+### Product
+
+Un product est une application ou un ensemble d’applications qui est testé dans DefectDojo. Elle peut être développée en interne, être développée par un tiers ou être sur étagère.
+
+Pour définir un produit, outre le nom et la description, un ensemble d’informations non obligatoires sont proposées. 
+
+Pour cela rendez vous dans le **Menu de gauche, première case et _Add product_**
+
+Une fois votre product créé, cliquez dessus. Vous arrivez alors sur la page récapitulative
+
+
+### Benchmark
+
+L'onglet benchmark permet de définir un niveau cible pour l’application d'ASVS (Application Security Verification Standard) ainsi que les règles déjà couvertes 
+
+A noter que pour définir les technologies et langages utilisés par le produit, ** il est nécessaire de passer par l’interface d’administration de Django** :
+
+    Technologies : http://<url_defectdojo>/admin/dojo/app_analysis/
+    Langages : http://<url_defectdojo>/admin/dojo/languages/
+
+-> dans notre cas:
+
+* technologies: confidence level 1
+* languages: java
+
+### Engagements
+
+Une fois le produit défini, les engagements peuvent être créés. Ils correspondent à un ensemble de tests sur un produit. Cette campagne est définie par une version de l’application à tester, une date de début et de fin, un responsable, un statut et un ensemble d’autres paramètres.
+
+C’est dans ces engagements que les résultats de tests (findings) des différents outils seront importés.
 
