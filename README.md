@@ -29,8 +29,23 @@ Puis on l'installe
 apt install defectdojo
 ```
 
-Ensuite il suffit de lancer la commande _defectdojo_ sous le terminal pour que l'application se déploie (y compris via un service systemd)
+Ensuite il suffit de lancer la commande _defectdojo_ sous le terminal pour que l'application se déploie (y compris via un service systemd). Kali précisera alors l'url et le port en écoute pour accès à la GUI, dans mon cas http://127.0.0.1:42003
+
+### Création de l'admin
+
+Nous n'avons pas le user/password par défaut, on va simplement créer un nouveau superuser. Pour cela toujours depuis le terminal
+
+```
+cd /usr/lib/defectdojo
+sudo -u _defectdojo --python3 manage.py createsuperuser
+```
+
+Il nous reste simplement à ajouter un utilisateur, un mot de passe associé (il peut râler si celui ci est trop faible) et ensuite se connecter.
+
+-> il est toujours possible de modifier le mot de passe admin, en utilisant la commande _changepassword_ plutôt que _createsuperuser_
 
 ## Accès à l'inteface graphique
+
+Une fois l'interface graphique lancée, on entre donc notre utilisateur fraichement créé
 
 
