@@ -80,3 +80,5 @@ Une fois le produit défini, les engagements peuvent être créés. Ils correspo
 C’est dans ces engagements que les résultats de tests (findings) des différents outils seront importés.
 
 source: https://aymericlagier.com/2019/12/05/gestion-des-analyses-de-securite-avec-defectdojo/
+
+https://subscription.packtpub.com/book/security/9781789802023/14/ch14lvl1sec08/approach-3-security-findings-management-defectdojo
