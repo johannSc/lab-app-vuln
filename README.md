@@ -4,18 +4,7 @@ Table matière
 
 ## Installation de l'application trouée: DVWA
 
-Installation via les dépôts
-sca
-docker: https://hub.docker.com/r/vulnerables/web-dvwa
-
-kali linux:
-
-apt install dvwa
-dvwa-start
-
-localhost:42001
-
-puis reset de la BDD
+Attention, installation ici via docker: https://hub.docker.com/r/vulnerables/web-dvwa
 
 ## Le couteau swisse bien utile: NMAP
 
@@ -31,7 +20,18 @@ xsltproc rapport.xml -o rapport.html
 
 ## Le scanner plus poussé: ZAP
 
-Installation via les dépôts
+### Déploiement
+
+Attention, installation ici via les dépôts:
+
+apt install dvwa
+dvwa-start
+
+localhost:42001
+
+puis reset de la BDD
+
+### Paramétrage de ZAP
 
 https://augment1security.com/authentication/dvwa-authentication/
 
