@@ -10,6 +10,8 @@ Attention, installation ici via docker: https://hub.docker.com/r/vulnerables/web
 
 Installation via les dépôts
 
+Installation des scripts : https://geekflare.com/fr/nmap-vulnerability-scan/
+
 nmap -script=default localhost -oX rapport.xml
 
 xsltproc rapport.xml -o rapport.html
