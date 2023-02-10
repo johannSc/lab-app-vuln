@@ -82,3 +82,21 @@ C’est dans ces engagements que les résultats de tests (findings) des différe
 source: https://aymericlagier.com/2019/12/05/gestion-des-analyses-de-securite-avec-defectdojo/
 
 https://subscription.packtpub.com/book/security/9781789802023/14/ch14lvl1sec08/approach-3-security-findings-management-defectdojo
+
+## Analyse des vulnérabilités
+
+### Installation de DVWA
+
+https://hub.docker.com/r/vulnerables/web-dvwa
+
+### NMAP
+
+nmap -script=default localhost -oX rapport.xml
+
+xsltproc rapport.xml -o rapport.html
+
+nmap -sV --script=exploit,vuln,auth,default localhost -oX rapport.xml
+
+xsltproc rapport.xml -o rapport.html
+
+
