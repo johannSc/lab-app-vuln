@@ -1,8 +1,9 @@
 # APP Vuln
 
-- [DVWA](#dvwa)
-- [NMPA](#nmap)
-- [ZAP](#zap)
+- [DVWA: L'application trouée](#dvwa)
+- [NMAP: Le couteau Suisse](#nmap)
+- [ZAP: Le truc de pro](#zap)
+- [DefectDojo: La représentation par graphes](#defectdojo)
 
 ## DVWA
 
@@ -93,7 +94,7 @@ puis reset de la BDD
 https://augment1security.com/authentication/dvwa-authentication/
 
 
-## L'outil qui permet de faire des métriques: DerfectDojo
+## DefectDojo
 
 ### Présentation
 
