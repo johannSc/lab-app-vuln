@@ -11,6 +11,17 @@ Le but ici est l'installation d'une application trouée de tous les cotés. Nous
 
 Attention, installation ici via docker: https://hub.docker.com/r/vulnerables/web-dvwa
 
+Attention, installation ici via les dépôts:
+
+```
+apt install dvwa
+dvwa-start
+```
+
+A noter:
+* localhost:42001
+* reset de la BDD
+
 ## NMAP
 
 NMAP, le couteau swisse bien utile. NMPA est plutôt associé à des test notamment au niveau du réseau. Cependant il peut être utilisé dans le cadre de scan de CVE et autres vulns, pour cela il faudra installer des scripts supplémentaires.
@@ -77,17 +88,6 @@ nmap -sV --script=exploit,vuln,auth,default localhost -oX
 ## ZAP
 
 Le scanner plus poussé: 
-
-### Déploiement
-
-Attention, installation ici via les dépôts:
-
-apt install dvwa
-dvwa-start
-
-localhost:42001
-
-puis reset de la BDD
 
 ### Paramétrage de ZAP
 
