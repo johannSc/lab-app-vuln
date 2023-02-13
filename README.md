@@ -87,7 +87,9 @@ nmap -sV --script=exploit,vuln,auth,default localhost -oX
 
 ## ZAP
 
-Le scanner plus poussé: 
+OWASP ZAP (abréviation de Zed Attack Proxy ) est un scanner de sécurité d'application Web open source. Il est destiné à être utilisé à la fois par les novices en matière de sécurité des applications et par les testeurs d'intrusion professionnels.
+
+Il s'agit de l'un des projets OWASP (Open Web Application Security Project) les plus actifs
 
 ### Paramétrage de ZAP
 
