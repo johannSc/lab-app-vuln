@@ -1,26 +1,79 @@
 # APP Vuln
 
-Table matière
+- [DVWA)](#dvwa)
+- [NMPA](#nmap)
+- [ZAP](#zap)
 
-## Installation de l'application trouée: DVWA
+## DVWA
+
+Le but ici est l'installation d'une application trouée de tous les cotés. Nous n'utiliserons pas les vulnérabilités à proprement parlé, puisque c'est redondant avec Juiceshop. Par contre nous aurons donc une appli qui pourra être auditée avec les outils que nous allons voir plus loin.
 
 Attention, installation ici via docker: https://hub.docker.com/r/vulnerables/web-dvwa
 
-## Le couteau swisse bien utile: NMAP
+## NMAP
+
+NMAP, le couteau swisse bien utile. NMPA est plutôt associé à des test notamment au niveau du réseau. Cependant il peut être utilisé dans le cadre de scan de CVE et autres vulns, pour cela il faudra installer des scripts supplémentaires.
 
 Installation via les dépôts
 
-Installation des scripts : https://geekflare.com/fr/nmap-vulnerability-scan/
+```
+apt install nmap
+```
 
-nmap -script=default localhost -oX rapport.xml
+Installation des scripts:
 
+Nmap-vulners, vulcan et vuln sont les scripts de détection CVE les plus courants et les plus populaires dans le moteur de recherche Nmap. Ces scripts vous permettent de découvrir des informations importantes sur les failles de sécurité du système.
+
+### Nmap-vulners
+
+```
+cd /usr/share/nmap/scripts/
+git clone https://github.com/vulnersCom/nmap-vulners.git
+```
+
+Exemple d'utilisation:
+
+```
+nmap -sV --script vulners [--script-args mincvss=<arg_val>] <target> -oX rapport.xml
+```
+
+Pour une meilleure lecture on peut passer le rapport en html:
+
+```
 xsltproc rapport.xml -o rapport.html
+```
 
-nmap -sV --script=exploit,vuln,auth,default localhost -oX rapport.xml
+### Nmap-vulscan
 
-xsltproc rapport.xml -o rapport.html
+```
+cd /usr/share/nmap/scripts/
+git clone https://github.com/scipag/vulscan.git
+ln -s `pwd`/scipag_vulscan /usr/share/nmap/scripts/vulscan 
+```
 
-## Le scanner plus poussé: ZAP
+Vulscan utilise des bases de données pré-configurées enregistrées localement sur notre machine. Pour mettre à jour la base de données, accédez au répertoire de mise à jour. Tapez la commande suivante dans un terminal pour accéder au répertoire de mise à jour.
+
+```
+cd vulscan/utilities/updater/
+chmod +x updateFiles.sh
+ ./updateFiles.sh
+```
+
+Utilisation: 
+
+```
+nmap -sV --script vulscan <target>
+```
+
+Enfin on peut également appeler plusieurs scripts via une unique commande nmap:
+
+```
+nmap -sV --script=exploit,vuln,auth,default localhost -oX 
+```
+
+## ZAP
+
+Le scanner plus poussé: 
 
 ### Déploiement
 
