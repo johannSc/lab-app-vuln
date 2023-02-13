@@ -31,6 +31,8 @@ cd /usr/share/nmap/scripts/
 git clone https://github.com/vulnersCom/nmap-vulners.git
 ```
 
+-> sous mac, le chemin est /opt/homebrew/share/nmap/scripts
+
 Exemple d'utilisation:
 
 ```
