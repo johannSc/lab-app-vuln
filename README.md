@@ -1,6 +1,6 @@
 # APP Vuln
 
-- [DVWA)](#dvwa)
+- [DVWA](#dvwa)
 - [NMPA](#nmap)
 - [ZAP](#zap)
 
