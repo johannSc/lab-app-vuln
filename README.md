@@ -61,10 +61,10 @@ chmod +x updateFiles.sh
  ./updateFiles.sh
 ```
 
-Utilisation: 
+Utilisation (attention il faut être dans le répertoire scripts: 
 
 ```
-nmap -sV --script vulscan <target>
+nmap -sV --script vulscan/vulscan.nse <target>
 ```
 
 Enfin on peut également appeler plusieurs scripts via une unique commande nmap:
