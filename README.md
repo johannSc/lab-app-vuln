@@ -99,7 +99,14 @@ Au préalable on installe ZAP:
 apt install zaproxy
 ```
 
+Puis on le lance:
+
+```
+zaproxy
+```
+
 https://augment1security.com/authentication/dvwa-authentication/
+
 
 
 ## DefectDojo
