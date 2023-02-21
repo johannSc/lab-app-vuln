@@ -93,6 +93,12 @@ Il s'agit de l'un des projets OWASP (Open Web Application Security Project) les 
 
 ### Paramétrage de ZAP
 
+Au préalable on installe ZAP:
+
+```
+apt install zaproxy
+```
+
 https://augment1security.com/authentication/dvwa-authentication/
 
 
