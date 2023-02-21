@@ -105,6 +105,8 @@ Puis on le lance:
 zaproxy
 ```
 
+Enfin on mets à jour les modules complémentaires, en cliquant sur _update ALl_
+
 https://augment1security.com/authentication/dvwa-authentication/
 
 
