@@ -48,7 +48,7 @@ git clone https://github.com/vulnersCom/nmap-vulners.git
 Exemple d'utilisation:
 
 ```
-nmap -sV --script vulners [--script-args mincvss=<arg_val>] <target> -pXXXX c-oX rapport.xml
+nmap -sV --script vulners [--script-args mincvss=<arg_val>] <target> -pXXXX -oX rapport.xml
 ```
 
 Pour une meilleure lecture on peut passer le rapport en html:
